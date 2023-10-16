@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            BackgrounView(isNight: $isNight)
+            BackgrounView(isNight: isNight)
             VStack {
                 Text("Cupertino, CA")
                     .font(.system(size: 32, weight: .bold))
@@ -55,11 +55,10 @@ struct ContentView: View {
                     print("button clicked")
                     isNight.toggle()
                 } label: {
-                    Text("Change Day Time")
-                        .frame(width: 280, height: 50)
-                        .background(Color.white)
-                        .font(.system(size: 20, weight: .bold))
-                        .cornerRadius(10)
+                    
+                    WeatherButton(title: "Change Day TIme",
+                                  textColor: .blue,
+                                  backgroundColor: .white)
                 }
                 
                 Spacer()
@@ -97,12 +96,14 @@ struct WeatherDayView: View {
 
 struct BackgrounView: View {
     
-    @Binding var isNight: Bool
+    var isNight: Bool
 
     var body: some View {
-        LinearGradient.linearGradient(colors: [isNight ? .black : .blue,
-                                               isNight ? .gray : Color("lightBlue")], startPoint: .topLeading,
-                                      endPoint: .bottomTrailing)
-        .edgesIgnoringSafeArea(.all)
+//        LinearGradient.linearGradient(colors: [isNight ? .black : .blue,
+//                                               isNight ? .gray : Color("lightBlue")], startPoint: .topLeading,
+//                                      endPoint: .bottomTrailing)
+        ContainerRelativeShape()
+            .fill( isNight ? Color.black.gradient : Color.blue.gradient)
+        .ignoresSafeArea()
     }
 }

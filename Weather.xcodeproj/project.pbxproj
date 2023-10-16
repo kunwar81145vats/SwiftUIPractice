@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95988C8D2AD9ABEA00956452 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95988C8C2AD9ABEA00956452 /* WeatherButton.swift */; };
 		95F93E162ACC869C00E66D09 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F93E152ACC869C00E66D09 /* WeatherApp.swift */; };
 		95F93E182ACC869C00E66D09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F93E172ACC869C00E66D09 /* ContentView.swift */; };
 		95F93E1A2ACC869E00E66D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F93E192ACC869E00E66D09 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95988C8C2AD9ABEA00956452 /* WeatherButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		95F93E122ACC869C00E66D09 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F93E152ACC869C00E66D09 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		95F93E172ACC869C00E66D09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		95F93E142ACC869C00E66D09 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				95988C8C2AD9ABEA00956452 /* WeatherButton.swift */,
 				95F93E152ACC869C00E66D09 /* WeatherApp.swift */,
 				95F93E172ACC869C00E66D09 /* ContentView.swift */,
 				95F93E192ACC869E00E66D09 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				95F93E182ACC869C00E66D09 /* ContentView.swift in Sources */,
 				95F93E162ACC869C00E66D09 /* WeatherApp.swift in Sources */,
+				95988C8D2AD9ABEA00956452 /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +284,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +314,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
